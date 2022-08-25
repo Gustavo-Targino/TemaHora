@@ -1,0 +1,45 @@
+:root {
+    --day-bg-color: #efdd83f9;
+    --afternoon-bg-color: #F24C4C;
+    --night-bg-color: #0F3D3E;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1, footer {
+    color: white;
+}
+
+section {
+    width: min(25rem,100%);
+    background-color: white;
+    margin-inline: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.505);
+    border-radius: 10px;
+    padding: 0rem 5rem 1.2rem;
+}
+
+#showHour p {
+    padding-top: 3rem;
+}
+
+img {
+    width: 19rem;
+   position: relative;
+   bottom: 0.8rem;
+}
+
+body.dayLight {
+    background-color: var(--day-bg-color);
+}
+
+body.afternoonLight {
+    background-color: var(--afternoon-bg-color);
+}
+
+body.nightLight {
+    background-color: var(--night-bg-color);
+}
