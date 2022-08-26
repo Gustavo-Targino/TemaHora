@@ -9,27 +9,29 @@ body {
     text-align: center;
 }
 
+#wrapper {
+    width: min(35rem,100%);
+    margin-inline: auto;
+}
+
 h1, footer {
     color: white;
 }
 
 section {
-    width: min(25rem,100%);
     background-color: white;
-    margin-inline: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.505);
     border-radius: 10px;
     padding: 0rem 5rem 1.2rem;
 }
 
 #showHour p {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 
 img {
-    width: 19rem;
-   position: relative;
-   bottom: 0.8rem;
+    width: 75%;
+    
 }
 
 body.dayLight {
@@ -42,4 +44,11 @@ body.afternoonLight {
 
 body.nightLight {
     background-color: var(--night-bg-color);
+}
+
+@media (min-width: 768xp) {
+    #wrapper {
+        width: min(20rem,100%);
+        margin-inline: auto;
+    }
 }
